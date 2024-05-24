@@ -5,8 +5,9 @@
     <h3><%= movie.title %></h3>
   </div>
 <% end %>
-<%= link_to "delete this list", list_path(@list), class: "btn btn-cancel",
+
+<%= link_to "delete this list", list_path(@list), class: "btn btn-primary",
 data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete this list?" } %>
 
-
 <%= link_to "Add Movie", new_list_bookmark_path(@list), class: "btn btn-primary" %>
+<%= link_to "Go To My Lists", lists_path, class: "btn btn-primary" %>
