@@ -12,3 +12,12 @@
     </div>
   </div>
 </div>
+
+
+<p>this is a test</p>
+<% @bookmarks.each do |bookmark| %>
+  <div class="bookmark">
+
+    <p><%= bookmark.movie.title %></p>
+  </div>
+<% end %>
